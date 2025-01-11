@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto";
+}
+header {
+  border-bottom: solid 1.5px#191919;
+  background-color: #ffc017;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  transition: background-color 0.4s ease;
+}
+
+header.sticky {
+  background-color: white;
+  transition: background-color 0.4s ease;
+}
+
+header.sticky .menu ul li:last-child a {
+  background-color: #1a8917;
+  color: white;
+}
+
+.center {
+  max-width: 85%;
+  margin: 0 auto;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+header img {
+  height: 3vw;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 10px;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #191919;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+nav ul li:last-child a {
+  background-color: #191919;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 20px;
+  transition: background-color 0.4s ease;
+}
+
+nav ul li:last-child a:hover {
+  background-color: #1a8917;
+  transition: background-color 0.4s ease;
+}
+
+.hero {
+  background-color: #ffc017;
+  width: 100%;
+  border-bottom: solid 1.5px#191919;
+  overflow: hidden;
+}
+
+.hero img {
+  margin-left: auto;
+  margin-right: -13em;
+  display: block;
+}
+h2 {
+  display: flex;
+  align-items: center;
+  margin: 1em auto;
+}
+.quote {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quote div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3em;
+  max-width: 22vw;
+}
+
+.quote div h1 {
+  font-size: 4rem;
+  white-space: nowrap;
+  font-family: "Specter";
+}
+.quote div p {
+  font-size: 1.1rem;
+}
+.quote div a {
+  background-color: #191919;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 20px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  transition: background-color 0.4s ease;
+}
+
+.quote div a:hover {
+  background-color: #1a8917;
+  transition: background-color 0.4s ease;
+}
+
+.trendNews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.trendCont {
+  width: 100%;
+}
+.trendCard {
+  display: flex;
+  width: 33%;
+  padding: 1em;
+  transition: background-color 0.2s ease;
+  transition: transform 0.2s ease;
+  align-content: center;
+}
+
+.trendCard:hover {
+  background-color: #95fff37c;
+  border-radius: 10px;
+  transition: background-color 0.2s ease;
+  transition: transform 0.2s ease;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+article .trendCard:hover {
+  background-color: #95fff37c;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  transform: scale(1);
+}
+
+.trending {
+  border-bottom: solid 2px #c1c1c1;
+  padding: 1em;
+}
+.trendNum {
+  display: flex;
+  font-size: 40px;
+  font-weight: bold;
+  color: #eaeaea;
+  margin-right: 10px;
+}
+
+.trendTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0.5em 0;
+  color: #333;
+}
+
+.trendInfo {
+  font-size: 0.8em;
+  color: #191919;
+  margin: 5px 0 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-weight: bold;
+}
+
+.trendInfo img {
+  max-height: 20px;
+  margin-right: 0.5em;
+  border-radius: 10px;
+}
+
+.trendInfo span {
+  color: #333;
+  margin: 0.2em;
+  font-weight: 400;
+}
+
+.trendTime {
+  display: flex;
+  align-items: center;
+  gap: 0.1em;
+  font-size: 14px;
+  margin: 5px 0 0;
+  color: #9c9c9c;
+  white-space: nowrap;
+}
+
+.trendTime span {
+  background-color: #ededed;
+  padding: 0.5em;
+  border-radius: 30px;
+  white-space: nowrap;
+}
+.bookmark {
+  margin-left: auto;
+  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease;
+  border-radius: 25px;
+  padding: 0.15em;
+}
+
+.bookmark:active {
+  background-color: #ffc017;
+  transform: scale(1.2);
+}
+
+.newsExtra {
+  display: flex;
+  flex-direction: column;
+}
+
+article .trendCard {
+  display: flex;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.contImage {
+  display: flex;
+  padding: 1em 0.5em;
+}
+
+.contImage img {
+  display: flex;
+  max-width: 10em;
+  height: auto;
+}
+
+.containerArtAsi {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+  width: 80%;
+  margin: auto;
+}
+
+.containerNewsExtra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.containerArtAsi .center {
+  display: flex;
+  width: 100%;
+}
+
+article {
+  flex: 8;
+  padding-top: 1em;
+}
+
+aside {
+  flex: 3;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.discover {
+  padding: 1em 2em;
+  position: sticky;
+  top: 4em;
+  flex-wrap: wrap;
+}
+
+.discover h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+  color: #333;
+  font-weight: bold;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2em;
+  justify-content: flex-start;
+  border-bottom: 1.5px solid#cecece;
+  padding-bottom: 1em;
+}
+
+.tag {
+  padding: 0.5em 1em;
+  border: solid 1px #c1c1c1;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #757575;
+  background-color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tag:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+footer a {
+  font-size: 0.8em;
+  padding-right: 5px;
+  color: #757575;
+}
+
+@media screen and (max-width: 869px) {
+  .trendCard {
+    display: flex;
+    width: 50%;
+    padding: 1em;
+    transition: background-color 0.2s ease;
+    transition: transform 0.2s ease;
+    align-content: center;
+  }
+  .containerArtAsi {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .containerArtAsi .trendCard {
+    width: 100%;
+  }
+
+  article,
+  aside {
+    width: 100%;
+  }
+  article {
+    order: 2;
+  }
+
+  aside {
+    order: 1;
+  }
+}
+@media screen and (max-width: 699px) {
+  .containerArtAsi {
+    width: 100%;
+  }
+  nav ul li:nth-child(-n + 3) {
+    display: none;
+  }
+  .hero img {
+    margin-right: -20em;
+  }
+  .menu {
+    justify-content: space-between;
+  }
+}
