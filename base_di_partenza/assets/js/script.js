@@ -8,3 +8,12 @@ window.addEventListener("scroll", () => {
     header.classList.remove("sticky");
   }
 });
+
+function check(event) {
+  const image = event.target;
+  if (image.src.endsWith("bookmark.svg")) {
+    image.src = "./assets/imgs/svg/bookmarkChecked.svg";
+  } else {
+    image.src = "./assets/imgs/svg/bookmark.svg";
+  }
+}

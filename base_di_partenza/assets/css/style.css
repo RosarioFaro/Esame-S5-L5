@@ -149,7 +149,7 @@ h2 {
   border-radius: 10px;
   transition: background-color 0.2s ease;
   transition: transform 0.2s ease;
-  transform: scale(1.1);
+  transform: scale(1.05);
   cursor: pointer;
 }
 
@@ -248,7 +248,7 @@ article .trendCard {
 
 .contImage img {
   display: flex;
-  max-width: 10em;
+  max-width: 14em;
   height: auto;
 }
 
@@ -327,6 +327,10 @@ footer a {
   color: #757575;
 }
 
+footer a:hover {
+  color: #3e73a4;
+}
+
 @media screen and (max-width: 869px) {
   .trendCard {
     display: flex;
@@ -368,5 +372,10 @@ footer a {
   }
   .menu {
     justify-content: space-between;
+  }
+}
+@media screen and (max-width: 605px) {
+  .contImage img {
+    max-width: 10em;
   }
 }
